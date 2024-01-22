@@ -1,0 +1,205 @@
+:root {
+  --white: rgba(255, 255, 255, 1);
+  --dark-bluedark-blue-100: rgba(96, 158, 212, 1);
+  --dark-bluedark-blue-200: rgba(53, 110, 169, 1);
+  --dark-bluedark-blue-300: rgba(10, 56, 113, 1);
+  --dark-bluedark-blue-400: rgba(7, 43, 97, 1);
+  --dark-bluedark-blue-500: rgba(5, 32, 81, 1);
+  --light-bluelight-blue-100: rgba(243, 245, 252, 1);
+  --light-bluelight-blue-200: rgba(239, 241, 250, 1);
+  --light-bluelight-blue-300: rgba(233, 236, 248, 1);
+  --light-bluelight-blue-400: rgba(170, 178, 213, 1);
+  --light-bluelight-blue-500: rgba(117, 127, 178, 1);
+  --graygray-100: rgba(206, 212, 218, 1);
+  --graygray-200: rgba(173, 181, 189, 1);
+  --graygray-300: rgba(134, 142, 150, 1);
+  --graygray-400: rgba(73, 80, 87, 1);
+  --graygray-500: rgba(52, 58, 64, 1);
+  --shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+}
+
+body {
+  background-color: var(--light-bluelight-blue-100);
+  width: 100%;
+}
+
+.decodificador .overlap-group {
+  position: absolute;
+  width: 400px;
+  height: 100% -40px;
+  top: 40px;
+  right: 40px;
+  bottom: 40px;
+  background-color: var(--white);
+  border-radius: 32px;
+  box-shadow: var(--shadow);
+}
+
+.decodificador .high-quality {
+  position: absolute;
+  width: 336px;
+  height: 304px;
+  top: 243px;
+  left: 32px;
+}
+
+.decodificador .frame {
+  display: flex;
+  flex-direction: column;
+  width: 336px;
+  align-items: flex-start;
+  gap: 16px;
+  position: absolute;
+  top: 579px;
+  left: 32px;
+}
+
+.decodificador .text-wrapper {
+  position: relative;
+  align-self: stretch;
+  margin-top: -1px;
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  color: var(--graygray-500);
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 28.8px;
+}
+
+.decodificador .p {
+  position: relative;
+  align-self: stretch;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: var(--graygray-400);
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+
+.decodificador .text-wrapper-2 {
+  position: absolute;
+  width: 680px;
+  top: 167px;
+  left: 240px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: var(--dark-bluedark-blue-300);
+  font-size: 32px;
+  letter-spacing: 0;
+  line-height: 48px;
+}
+
+.decodificador .frame-2 {
+  display: flex;
+  width: 680px;
+  align-items: flex-start;
+  gap: 24px;
+  position: absolute;
+  left: 240px;
+  bottom: 70px;
+}
+
+.decodificador .button-2 {
+  all: unset;
+  box-sizing: border-box;
+  position: relative;
+  flex: 1;
+  margin-top: -1px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: var(--white);
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  background-color: var(--dark-bluedark-blue-300);
+  border-radius: 24px;
+  padding: 24px;
+  gap: 8px;
+  align-items: flex-start;
+  width: 328px;
+}
+
+.decodificador .button-wrapper {
+  all: unset;
+  box-sizing: border-box;
+  display: flex;
+  width: 328px;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 24px;
+  position: relative;
+  background-color: #d8dfe8;
+  border-radius: 24px;
+  border: 1px solid;
+  border-color: var(--dark-bluedark-blue-300);
+}
+
+.decodificador .button-3 {
+  all: unset;
+  box-sizing: border-box;
+  position: relative;
+  flex: 1;
+  margin-top: -1px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: var(--dark-bluedark-blue-300);
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  border-radius: 24px;
+  padding: 24px;
+  gap: 8px;
+  align-items: flex-start;
+  width: 328px;
+  background-color: var(--graygray-100);
+}
+
+.decodificador .frame-3 {
+  display: inline-flex;
+  align-items: start;
+  gap: 10px;
+  position: absolute;
+  bottom: 150px;
+  left: 240px;
+}
+
+.decodificador .bi-exclamation {
+  position: relative;
+  width: 16px;
+  height: 16px;
+}
+
+.decodificador .text-wrapper-3 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  opacity: 0.8;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: var(--graygray-400);
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: 18px;
+  white-space: nowrap;
+}
+
+.decodificador .frame-4 {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+
+.decodificador .logo {
+  position: relative;
+  width: 120px;
+  height: 48px;
+}
