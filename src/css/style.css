@@ -293,3 +293,26 @@ body {
 .copiar textarea::-webkit-resizer {
   display: none;
 }
+
+@media (max-width: 768px) {
+  * {
+    flex-direction: column; /* Muda a direção do flex para coluna */
+    align-items: start; /* Centraliza os itens na coluna */
+  }
+
+  .text-area {
+    margin-bottom: 20px; /* Adiciona espaço entre text areas */
+  }
+
+  .copiar {
+    display: flex;
+    flex-direction: column; /* Muda a direção do flex para coluna */
+    align-items: center; /* Centraliza os itens na coluna */
+    bottom: 0; /* Alinha a div "copiar" ao fundo */
+  }
+
+  .button-2,
+  .button-3 {
+    width: 100%; /* Faz com que os botões ocupem toda a largura */
+  }
+}
