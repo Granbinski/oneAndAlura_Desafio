@@ -4,31 +4,46 @@
  <head>
   <meta charset="utf-8" />
   <link rel="stylesheet" href="css/style.css" />
+  <title>Decodificador</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
  </head>
 
  <body>
   <div class="decodificador">
-   <div class="div">
-    <div class="overlap-group">
+   <div class="overlap-group">
+    <div class="copiar esconder">
+     <textarea class="texto-cript"></textarea>
+     <button class="button-copiar">Copiar</button>
+    </div>
+    <div class="nao-encontrada">
      <img class="high-quality" src="icons/High quality products 1 1.svg" />
      <div class="frame">
       <div class="text-wrapper">Nenhuma mensagem encontrada</div>
       <p class="p">Digite um texto que você deseja criptografar ou descriptografar.</p>
      </div>
     </div>
-    <div class="frame-3">
-     <img class="bi-exclamation" src="icons/bi_exclamation-circle-fill.svg" />
-     <p class="text-wrapper-3">Apenas letras minúsculas e sem acento.</p>
-    </div>
-    <div class="text-wrapper-2">Digite seu texto</div>
-    <div class="frame-2">
-     <button class="button-2">Criptografar</button>
-     <button class="button-wrapper button-3">Descriptografar</button>
+
+   </div>
+   <div class="frame-3">
+    <img class="bi-exclamation" src="icons/bi_exclamation-circle-fill.svg" />
+    <p class="text-wrapper-3">Apenas letras minúsculas e sem acento.</p>
+   </div>
+   <div class="text-wrapper-2">
+    <p>Digite seu texto</p>
+    <div class="text-area">
+     <textarea name="texto" id="texto" rows="10" cols="50"></textarea>
     </div>
 
-    <div class="frame-4"><img class="logo" src="icons/Vector.svg" /></div>
    </div>
+   <div class="frame-2">
+    <button class="button-2">Criptografar</button>
+    <button class="button-wrapper button-3">Descriptografar</button>
+   </div>
+
+   <div class="frame-4"><img class="logo" src="icons/Vector.svg" /></div>
   </div>
+  <script src="scripts/main.js"></script>
  </body>
+
 
 </html>

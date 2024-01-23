@@ -16,6 +16,7 @@
   --graygray-400: rgba(73, 80, 87, 1);
   --graygray-500: rgba(52, 58, 64, 1);
   --shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+  --text-area: #0a3871;
 }
 
 body {
@@ -34,7 +35,46 @@ body {
   border-radius: 32px;
   box-shadow: var(--shadow);
 }
+.copiar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  position: absolute;
+  top: 32px;
+  left: 32px;
+}
+.copiar .button-copiar {
+  all: unset;
+  box-sizing: border-box;
+  position: relative;
+  flex: 1;
+  margin-top: -1px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: var(--dark-bluedark-blue-300);
+  border: 1px solid var(--dark-bluedark-blue-300);
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  border-radius: 24px;
+  padding: 24px;
+  gap: 8px;
+  align-items: flex-start;
+  width: 328px;
+  background-color: var(--white);
+  margin-top: 32px;
+}
 
+.esconder {
+  display: none;
+}
+
+.copiar .button-copiar:hover {
+  background-color: var(--graygray-200);
+  cursor: pointer;
+}
 .decodificador .high-quality {
   position: absolute;
   width: 336px;
@@ -202,4 +242,54 @@ body {
   position: relative;
   width: 120px;
   height: 48px;
+}
+
+.decodificador .button-2:hover {
+  background-color: var(--dark-bluedark-blue-400);
+  cursor: pointer;
+}
+
+.decodificador .button-3:hover {
+  background-color: var(--graygray-200);
+  cursor: pointer;
+}
+
+.text-area textarea {
+  position: fixed;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: var(--text-area);
+  border: none;
+  font-size: 32px;
+  letter-spacing: 0;
+  background-color: transparent;
+  padding: 16px;
+  outline: none;
+}
+
+.decodificador .text-area textarea::-webkit-resizer {
+  display: none;
+}
+
+.decodificador .text-area textarea::-ms-resizer {
+  display: none;
+}
+
+.copiar textarea {
+  top: 10px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: var(--graygray-400);
+  font-size: 24px;
+  line-height: 36px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  resize: none;
+  width: 100%;
+  height: 600px;
+}
+
+.copiar textarea::-webkit-resizer {
+  display: none;
 }
