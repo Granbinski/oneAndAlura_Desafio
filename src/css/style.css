@@ -295,24 +295,38 @@ body {
 }
 
 @media (max-width: 768px) {
-  * {
-    flex-direction: column; /* Muda a direção do flex para coluna */
-    align-items: start; /* Centraliza os itens na coluna */
+  .decodificador .overlap-group {
+    width: 85%;
+    height: 15%;
+    top: 700px;
+    position: flex;
   }
 
-  .text-area {
-    margin-bottom: 20px; /* Adiciona espaço entre text areas */
+  .copiar textarea,
+  .text-area textarea {
+    height: 120px;
   }
 
-  .copiar {
-    display: flex;
-    flex-direction: column; /* Muda a direção do flex para coluna */
-    align-items: center; /* Centraliza os itens na coluna */
-    bottom: 0; /* Alinha a div "copiar" ao fundo */
+  .frame-2 {
+    top: 500px;
+    padding: 0 60px 0 0;
+  }
+  .frame-3 {
+    top: 480px;
   }
 
-  .button-2,
-  .button-3 {
-    width: 100%; /* Faz com que os botões ocupem toda a largura */
+  .esconder-tablet {
+    display: none;
+  }
+
+  .overlap-group {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    left: 32px;
+  }
+
+  .esconder-tablet {
+    display: none;
   }
 }
